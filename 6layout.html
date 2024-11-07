@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Article</title>
+    <style>
+        .head1, .head2{
+            font-size: 30px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .menu a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .menu a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            min-width: 200px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-right: 20px;
+        }
+
+        .content {
+            flex: 3;
+            min-width: 300px;
+            background-color: white;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 0px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        h2, h3 {
+            color: #4CAF50;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="head1">Welcome to My Website</div>
+        <div class="head2">Your go-to resource for everything!</div>
+    </header>
+
+    <!-- Menu Navigation Bar -->
+    <nav class="menu">
+        <div>
+            <a href="#home">HOME</a>
+            <a href="#news">NEWS</a>
+            <a href="#notification">NOTIFICATIONS</a>
+        </div>
+        <div>
+            <a href="#login">LOGIN</a>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p>This is the sidebar content. You can add links, information, or other elements here.</p>
+        </aside>
+
+        <!-- Body Section -->
+        <main class="content">
+            <section id="Content">
+                <h2>Introduction to HTML and CSS</h2>
+                <p>HTML (HyperText Markup Language) and CSS (Cascading Style Sheets) are the foundational technologies for building web pages. HTML provides the structure of the page, while CSS is used to control the presentation, formatting, and layout.</p>
+
+                <h3>Basic Concepts of HTML</h3>
+                <p>HTML uses a series of elements to enclose different parts of the content to make it appear or act in a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on.</p>
+                <p>Here is an example of a simple HTML document:</p>
+                <pre>
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;This is a Heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+                </pre>
+
+                <h3></h3>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Footer Section</p>
+        <p>&copy; 2023 My Website</p>
+    </footer>
+
+</body>
+
+</html>

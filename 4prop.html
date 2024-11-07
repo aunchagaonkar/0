@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex; /* Flexbox layout */
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .box {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px; /* Fixed width */
+            margin: 10px;
+            opacity: 0.9; /* Slight transparency */
+            transition: transform 0.3s; /* Smooth transform transition */
+        }
+
+        .box:hover {
+            transform: scale(1.05); /* Scale effect on hover */
+        }
+
+        .button {
+            background-color: #4CAF50; /* Button color */
+            color: white; /* Button text color */
+            padding: 10px 15px; /* Button padding */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Button color transition */
+        }
+
+        .button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        .text {
+            text-align: center; /* Centered text */
+            font-size: 16px; /* Font size */
+            line-height: 1.5; /* Line height */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Properties Example</h1>
+
+    <div class="container">
+        <div class="box">
+            <h2>Flexbox Layout</h2>
+            <p class="text">This box uses <code>display: flex;</code> to arrange elements.</p>
+        </div>
+
+        <div class="box">
+            <h2>Opacity</h2>
+            <p class="text">This box has an <code>opacity</code> of 0.9, making it slightly transparent.</p>
+        </div>
+
+        <div class="box">
+            <h2>Transition</h2>
+            <p class="text">Hover over this box to see the <code>transition</code> effect in action.</p>
+        </div>
+
+        <div class="box">
+            <h2>Button</h2>
+            <button class="button">Click Me!</button>
+        </div>
+
+        <div class="box">
+            <h2>Text Alignment</h2>
+            <p class="text">This text is centered using <code>text-align: center;</code>.</p>
+        </div>
+
+        <div class="box">
+            <h2>Box Shadow</h2>
+            <p class="text">This box has a <code>box-shadow</code> for a lifted effect.</p>
+        </div>
+    </div>
+
+</body>
+</html>
